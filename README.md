@@ -4,5 +4,5 @@ Repository containing patch files of tasks assigned by JP Morgan Chase &amp; Co.
 # Website:
 https://in.insidesherpa.com/virtual-internships
 
-# Queries?
+# Questions?
 syedmustaqhim777@gmail.com
