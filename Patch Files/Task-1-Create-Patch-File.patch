@@ -1,0 +1,48 @@
+From d9a1e7f4ab47e8821cac8d269e4a2e7c9ae670da Mon Sep 17 00:00:00 2001
+From: Syed <syedmustaqhim777@gmail.com>
+Date: Thu, 23 Jul 2020 00:53:27 +0530
+Subject: [PATCH] Create Patch File
+
+---
+ client_test.py | 24 ++++++++++++++++++++++++
+ 1 file changed, 24 insertions(+)
+
+diff --git a/client_test.py b/client_test.py
+index d8d3837..1b4ead5 100644
+--- a/client_test.py
++++ b/client_test.py
+@@ -27,6 +27,30 @@ class ClientTest(unittest.TestCase):
+     self.assertEqual(getRatio(1, 0), None)
+     self.assertEqual(getRatio(0, 0), None)
+ 
++  def test_getRatio_priceBZero(self):
++     price_a = 119.2
++     price_b = 0
++     self.assertIsNone(getRatio(price_a, price_b))
++ 
++   def test_getRatio_priceAZero(self):
++     price_a = 0
++     price_b = 121.68
++     self.assertEqual(getRatio(price_a, price_b), 0)
++ 
++   def test_getRatio_greaterThan1(self):
++     price_a = 346.48
++     price_b = 166.39
++     self.assertGreater(getRatio(price_a, price_b), 1)
++ 
++   def test_getRatio_LessThan1(self):
++     price_a = 166.39
++     price_b = 356.48
++     self.assertLess(getRatio(price_a, price_b), 1)
++
++   def test_getRatio_exactlyOne(self):
++     price_a = 356.48
++     price_b = 356.48
++     self.assertEqual(getRatio(price_a, price_b), 1)
+ 
+ if __name__ == '__main__':
+     unittest.main()
+\ No newline at end of file
+-- 
+2.26.2.windows.1
+
