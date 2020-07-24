@@ -13,8 +13,10 @@
 
 
 ##  JPMorgan-Chase-&-Co-Virtual-Internship
-Repository containing files of the completed tasks assigned during the virtual software engineering internship at JPMorgan Chase & Co.
+Repository containing files of the completed tasks assigned during the virtual [software engineering internship at JPMorgan Chase & Co](https://www.insidesherpa.com/virtual-internships).
 
-## [Website](https://www.insidesherpa.com/virtual-internships)
+
+> Reach me at:
+syedmustaqhim777@gmail.com
 
 
